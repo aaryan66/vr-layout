@@ -1,0 +1,136 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Permanent+Marker&display=swap');
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {  
+    --clr-primary: #0ee9d7;
+    --clr-secondary: #5a66ef;
+    --clr-accent: #F7F7FF;
+    --clr-gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+    --ff-title: 'bungee', sans-serif;
+    --ff-body: 'canada-type-gibson',sans-serif;
+    --fw-body: 300;
+    --fw-bold: 800;
+    --fw-title: 400;
+    --fw-number: 800;
+  }
+  
+  body {
+    min-height: 90vh;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-body);
+    font-size: 1.25rem;
+  }
+  
+  img {
+    width: 550px;
+    height: 350px;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+
+  h2 {
+    margin-left: 500px;
+    margin-top: -260px;
+  }
+
+  p {
+    margin-left: 500px;
+  }
+
+  a {
+    color: inherit;
+  }
+  
+  a:hover,
+  a:focus {
+    color: var(--clr-accent);
+  }
+  
+  :focus {
+    outline: 5px solid var(--clr-accent);
+    outline-offset: 3px;
+  }
+  
+  .title,
+  .credits {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0 2em;
+    margin: 0;
+    background: var(--clr-gradient);
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .title {
+    font-size: calc(1rem + 3vw);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-title);
+    color: white;
+    text-shadow: 3px 5px 10px rgba(0,0,0, .2);
+    clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+  }
+  
+  span {
+    font-family: 'Permanent Marker', sans-serif;
+  }
+
+  .title span {
+      font-weight: var(--fw-number);
+      color: black;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      font-size: 5em;
+      top: -30%;
+      z-index: -1;
+      opacity: .25
+    }
+    
+    .columns {
+        margin-top: 1rem;
+        margin-left: 5rem;
+        width: min(90%, 75rem);
+        display: grid;
+        grid-auto-flow: row;
+        gap: 2em;
+      }
+      
+      @media (min-width: 55em) {
+        .columns {
+          grid-auto-flow: column;
+         }
+      } 
+  
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1000px;
+    background: #3498db;
+    color: #fff;
+    transition: all .5s ease;
+    font-size: 16px;
+    }
+    
+button:hover {
+    background: #2980b9;
+}
+
+.aaryan:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.sabal:hover{
+  text-decoration: none;
+  color: black;
+}
